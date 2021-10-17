@@ -13,7 +13,7 @@ esspetially when they are ${adjective} things `);
 // add input to an array
 let myArray = [];
 function addInputToArray() {
-  myArray.push(`${noun}`, `${verb}`, `${adjective}`, `${adjective}`);
+  myArray.push(`${noun}`, `${verb}`, `${adverb}`, `${adjective}`);
 }
 addInputToArray();
 console.log(myArray);
@@ -22,7 +22,7 @@ console.log(myArray);
 let myObject = {};
 myObject["noun"] = `${noun}`;
 myObject["verb"] = `${verb}`;
-myObject["adverb"] = `${adjective}`;
+myObject["adverb"] = `${adverb}`;
 myObject["ajective"] = `${adjective}`;
 
 console.log(myObject);
