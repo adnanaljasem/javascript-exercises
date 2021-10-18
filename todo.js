@@ -15,9 +15,8 @@ theButton.addEventListener("click", function addToMyArrayAndShowToUser() {
   } else {
     return false;
   }
-  //show the list to the user
+  //show the list to the user //create a <p> inside the container when you click the button
 
-  //create a <p> inside the container when you click the button
   let myParagraph = document.createElement("p");
   //the content of this p is the input value
   myParagraph.innerText = textInput.value;
