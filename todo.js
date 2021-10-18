@@ -26,7 +26,7 @@ theButton.addEventListener("click", function addToMyArrayAndShowToUser() {
   textInput.value = "";
   //change style of the <p> : cursor=> pointer
   myParagraph.style.cursor = "pointer";
-  //add event listner for <p> click => done
+  //add an event listner for <p> click => done
   myParagraph.addEventListener("click", function () {
     const isDone = "  (is done)";
     if (myParagraph.innerHTML.includes(isDone)) {
