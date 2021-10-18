@@ -6,5 +6,8 @@ const myButton = document.getElementById("btn");
 myButton.addEventListener("click", function () {
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((response) => response.json())
-    .then((data) => (myPhoto.src = data.message));
+    .then((data) => (myPhoto.src = data.message))
+    // .catch(() => {
+    //     alert("error happened ";)
+    })
 });

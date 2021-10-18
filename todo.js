@@ -2,7 +2,6 @@ let toDoList = [];
 let theButton = document.querySelector("[type=button]");
 let textInput = document.querySelector("[type=text]");
 let myContainer = document.getElementById("container");
-let myArray = [];
 
 theButton.addEventListener("click", function addToMyArrayAndShowToUser() {
   //get input from input field
@@ -30,8 +29,12 @@ theButton.addEventListener("click", function addToMyArrayAndShowToUser() {
   myParagraph.style.cursor = "pointer";
   //add event listner for <p> click => done
   myParagraph.addEventListener("click", function () {
-    let isDone = "  (is done)";
-    myParagraph.innerHTML = myParagraph.textContent + isDone;
+    const isDone = "  (is done)";
+    if (myParagraph.innerHTML.includes(isDone)) {
+      myParagraph.innerHTML = myParagraph.textContent.replace(isDone, "");
+    } else {
+      myParagraph.innerHTML = myParagraph.textContent + isDone;
+    }
   });
 
   myParagraph.addEventListener("dblclick", function () {
