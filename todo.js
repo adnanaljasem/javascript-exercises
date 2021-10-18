@@ -30,6 +30,11 @@ theButton.addEventListener("click", function addToMyArrayAndShowToUser() {
   myParagraph.style.cursor = "pointer";
   //add event listner for <p> click => done
   myParagraph.addEventListener("click", function () {
-    myParagraph.innerHTML = myParagraph.value + " (is done)";
+    let isDone = "  (is done)";
+    myParagraph.innerHTML = myParagraph.textContent + isDone;
+  });
+
+  myParagraph.addEventListener("dblclick", function () {
+    myParagraph.remove();
   });
 });
