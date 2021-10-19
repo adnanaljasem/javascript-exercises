@@ -7,3 +7,4 @@ numbers.forEach((item, index, arr) => {
 // function consoleItems(item, index, arr) {
 //   console.log("this index [" + index + "] =" + item);
 // }
+//::::::::
