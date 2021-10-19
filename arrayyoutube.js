@@ -14,7 +14,7 @@ const items = [
 //   return item.price <= 100;
 // });
 // console.log(filteredItems);
-/////
+///////////
 function filteredItems2(item) {
   if (items.price <= 100) {
     return items.price();
