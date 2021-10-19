@@ -5,7 +5,7 @@ while (numberOfChildern < 0 || isNaN(numberOfChildern)) {
   );
   numberOfChildern = prompt("what is the number of Childern");
 }
-
+// s
 let partnerName = prompt("what is your partners name?");
 let geographicLocation = prompt("What's your country?");
 let jobTitle = prompt("What's your job?");
