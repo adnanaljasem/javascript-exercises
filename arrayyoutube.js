@@ -7,7 +7,7 @@ const items = [
   { name: "Computer", price: 1000 },
   { name: "Keyboard", price: 25 },
 ];
-// ];
+
 // // filter method
 // const filteredItems = items.filter((item) => {
 //   // ture of false statement to weather or not we want to inculde the item
