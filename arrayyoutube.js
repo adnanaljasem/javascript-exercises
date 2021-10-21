@@ -10,7 +10,7 @@ const items = [
 
 // // filter method
 // const filteredItems = items.filter((item) => {
-//   // ture of false statement to weather or not we want to inculde the item
+//   // ture of false statementk to weather or not we want to inculde the item
 //   return item.price <= 100;
 // });
 // console.log(filteredItems);
