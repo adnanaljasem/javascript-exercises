@@ -3,7 +3,9 @@ let theButton = document.querySelector("[type=button]");
 let textInput = document.querySelector("[type=text]");
 let myContainer = document.getElementById("container");
 
-theButton.addEventListener("click", function addToMyArrayAndShowToUser() {
+theButton.addEventListener("click", addToMyArrayAndShowToUser);
+
+function addToMyArrayAndShowToUser() {
   //get input from input field
   //add input to the array
 
@@ -17,27 +19,35 @@ theButton.addEventListener("click", function addToMyArrayAndShowToUser() {
   }
   //show the list to the user //create a <p> inside the container when you click the button
 
-  let myParagraph = document.createElement("li");
+  let myLi = document.createElement("li");
   //the content of this li is the input value
-  myParagraph.innerText = textInput.value;
+  myLi.innerText = textInput.value;
   // append it! (who is the father:))
-  myContainer.appendChild(myParagraph);
+  myContainer.appendChild(myLi);
   //empty ipnut field after clicking butten:
   textInput.value = "";
   //change style of the <li> : cursor=> pointer
-  myParagraph.style.cursor = "pointer";
+  myLi.style.cursor = "pointer";
 
   //add an event listner for <li> click => done / undone
-  myParagraph.addEventListener("click", function () {
+  myLi.addEventListener("click", function () {
     const isDone = "  (is done)";
-    if (myParagraph.innerHTML.includes(isDone)) {
-      myParagraph.innerHTML = myParagraph.textContent.replace(isDone, "");
+    if (myLi.innerHTML.includes(isDone)) {
+      myLi.innerHTML = myLi.textContent.replace(isDone, "");
     } else {
-      myParagraph.innerHTML = myParagraph.textContent + isDone;
+      myLi.innerHTML = myLi.textContent + isDone;
     }
   });
   // add dblclick to remove the li
-  myParagraph.addEventListener("dblclick", function () {
-    myParagraph.remove();
+  myLi.addEventListener("dblclick", function () {
+    myLi.remove();
   });
+}
+
+// do the same when you press enter
+textInput.addEventListener("keydown", function (e) {
+  if (e.code === "Enter") {
+    //checks whether the pressed key is "Enter"
+    addToMyArrayAndShowToUser();
+  }
 });
