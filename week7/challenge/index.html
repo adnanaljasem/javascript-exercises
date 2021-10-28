@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <marquee>
+        <h1>Weather App, Please vote for me😁✌🏼</h1>
+      </marquee>
+      <label for="city">Please choose a City</label>
+      <select name="city" id="city" onchange="seeWeather()">
+        <option value="Zurich">Zurich</option>
+        <option value="London">London</option>
+        <option value="Paris">Paris</option>
+        <option value="Rome">Rome</option>
+        <option value="Damascus">Damascus</option>
+        <option value="Istanbul">Istanbul</option>
+      </select>
+      <section id="weatherResult"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
