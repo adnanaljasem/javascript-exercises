@@ -19,7 +19,7 @@ main {
   border: 2px black solid;
   margin: 1rem auto;
   padding: 0rem 5%;
-  background-color: rgb(183, 218, 183);
+  background-color: rgba(183, 218, 183, 0.281);
   width: 20rem;
   border-radius: 19px;
   box-shadow: 2px 2px 2px gray;
