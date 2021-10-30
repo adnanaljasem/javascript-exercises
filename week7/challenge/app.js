@@ -2,6 +2,8 @@
 
 const weatherResult = document.getElementById("weatherResult");
 
+const cityContainer = document.getElementById("city");
+cityContainer.addEventListener("change", seeWeather);
 function seeWeather() {
   const city = document.getElementById("city").value;
 
