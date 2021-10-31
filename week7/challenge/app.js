@@ -1,3 +1,4 @@
+//this is the api key:
 // 9886e4a67625f4b942c9773591d79044
 
 const weatherResult = document.getElementById("weatherResult");
